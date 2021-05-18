@@ -1,0 +1,42 @@
+{
+  "name": "react-leaflet-rotatedmarker",
+  "version": "0.1.0",
+  "description": "React wrapper of bbecquet's leaflet rotated marker",
+  "main": "lib/react-leaflet-rotatedmarker.js",
+  "scripts": {
+    "transpile": "npx babel --watch src/RotatedMarker.jsx --out-file lib/react-leaflet-rotatedmarker.js",
+    "clean": "rm -rf lib",
+    "prepublish": "yarn run transpile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/SimJH/react-leaflet-rotatedmarker.git"
+  },
+  "keywords": [
+    "react",
+    "leaflet",
+    "rotated",
+    "marker"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SimJH/react-leaflet-rotatedmarker/issues"
+  },
+  "homepage": "https://github.com/SimJH/react-leaflet-rotatedmarker#readme",
+  "peerDependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^17.0.2",
+    "react-leaflet": "^2.8.0"
+  },
+  "dependencies": {
+    "leaflet": "^1.7.1",
+    "leaflet-rotatedmarker": "^0.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/preset-react": "^7.13.13",
+    "@babel/runtime": "^7.14.0"
+  }
+}
